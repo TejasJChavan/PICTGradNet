@@ -303,7 +303,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding-top: 3rem;
+  padding-top: 20px;
   margin-top: -1px;
   border-top: 1px solid var(--c-border-primary);
 }
@@ -314,7 +314,7 @@ img {
 }
 .content-header-intro p {
   color: var(--c-text-secondary);
-  margin-top: 0.25rem;
+  margin-top: 1rem;
   font-size: 0.875rem;
   margin-bottom: 1rem;
 }
@@ -532,6 +532,7 @@ html::-webkit-scrollbar-thumb {
   z-index: 1;
   border-radius: 10px;
   margin-left: -50px;
+  right:0;
 }
 
 /* Links inside the dropdown */
@@ -541,6 +542,7 @@ html::-webkit-scrollbar-thumb {
   text-decoration: none;
   display: block;
   border-radius: 10px;
+  left:0;
 }
 
 /* Change color of dropdown links on hover */
