@@ -5,6 +5,7 @@
   <title>Dashboard</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header class="header">
@@ -35,7 +36,7 @@
     </div>
 </header>
 <main class="main">
-    <div class="responsive-wrapper">
+    <div class="responsive-wrapper" >
         <div class="main-header">
             <h1>Welcome to PICT GradNet</h1>
             <div class="search">
@@ -45,18 +46,36 @@
                 </button>
             </div>
         </div>
-        <div class="horizontal-tabs">
-            <a href="#">My details</a>
-            <a href="#">Registration</a>
-            <a href="#">Upload CV</a>
-            <a href="About.html">About</a>
-            <a href="#">Help</a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#" class="active">Companies</a>
-            <a href="#"></a>
+        <div style="display: flex; justify-content: space-between;">
+            <div class="horizontal-tabs">
+                <a href="#">My details</a>
+                <a href="#">Registration</a>
+                <a href="#">Upload CV</a>
+                <a href="About.html">About</a>
+                <a href="#">Help</a>
+                
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#" class="active">Companies</a>
+                <a href="#"></a>
+            </div>
+            <div style="padding-top: 20px !important;">
+                <a href="#">
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-user"></i></button>
+                        <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                        </div>
+                     </div>
+                </a>
+    
+            </div>
         </div>
+       
+        
         <div class="content-header">
             <div class="content-header-intro">
                 <h2>Connected companies</h2>
