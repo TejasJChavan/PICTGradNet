@@ -556,3 +556,22 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--c-accent-primary);
   color: #fff;
 }
+
+.card-body {
+  padding: 1rem 1.25rem;
+  font-size: 10rem;
+  text-align: center; /* Center-align the hyperlinks */
+}
+
+.card-body a {
+  display: block; /* Display hyperlinks as block to occupy full width */
+  margin-top: 0.5rem; /* Add margin to separate hyperlinks */
+  color: var(--c-accent-primary); /* Change hyperlink color */
+  text-decoration: none;
+  transition: color 0.15s ease; /* Add transition effect */
+  font-size: 1.25rem; /* Increase font size of hyperlinks */
+}
+
+.card-body a:hover {
+  color: var(--c-accent-secondary); /* Change hyperlink color on hover */
+}
