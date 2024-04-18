@@ -1,31 +1,177 @@
-<!doctype html>
-<html>
-<head>
-<Title>
-Login
-</Title>
-<link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <div class="wrapper">
-        <form action="">
-            <h1>Login</h1>
-                   <div class="input-box">
-                     <input type="text" placeholder="Username" required>
-                   </div>
-                   <div class="input-box"> 
-                     <input type="password" placeholder="Password" required>
-                   </div>
-                    <div class="remember-forget"> 
-                      <label><input type="checkbox">Remember me</label>
-                       <a href="#">Forgot password?</a>
-                    </div>
-             <button type="submit" class="btn"><a href="home.html">Login</a></button>
-              
-                    <div class="register-link">
-                        <p>Don't have an account?<a href="#">Register</a></p>
-                    </div>
-                 </form>
-     </div>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GradNET</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <style>
+      .net {
+        color: blue;
+      }
+      .carousel .carousel-item {
+        height: 500px;
+      }
+
+      .carousel-item img {
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        min-height: 500px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-code-slash"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"
+            />
+          </svg>
+          Grad<span class="net">NET</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" style="justify-self: end" href="./about.html"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./company_logos.png"
+            class="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            Manage Your Portfolio and Discover more about PICT Placements
+          </h1>
+          <p class="lead">
+            Get formatted data on college placements, create your own portfolio,
+            contact companies, and much more!
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="./signup.html"><button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+              Sign Up
+            </button></a>
+            <a href="login.html"
+              ><button
+                type="button"
+                class="btn btn-outline-secondary btn-lg px-4"
+              >
+                Login
+              </button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container px-4 py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom">Why PICTGradNET?</h2>
+      <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Free to Use</h3>
+            <p>
+              At PICTGradNet, we believe in accessibility. That's why our
+              platform is completely free to use for all PICT students. We
+              understand the financial constraints students may face, and we're
+              committed to providing a valuable resource without adding to their
+              financial burden. With PICTGradNet, you can access all the
+              essential placements data and features without any hidden costs or
+              subscription fees.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Reliable Data</h3>
+            <p>
+              Trust is paramount when it comes to making important career
+              decisions. That's why PICTGradNet sources its data directly from
+              officially published sources, ensuring accuracy and reliability.
+              You can have peace of mind knowing that the information you find
+              on our platform is up-to-date and verified, giving you the
+              confidence to make informed choices about your future.
+            </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3 class="fs-2 text-body-emphasis">Increase Productivity</h3>
+            <p>
+              Time is precious, especially during the hectic job search process.
+              PICTGradNet aims to streamline your experience and boost your
+              productivity by providing already formatted data. Say goodbye to
+              tedious manual data entry and formatting tasks. With PICTGradNet,
+              you can focus your time and energy on what truly matters –
+              preparing for interviews, networking with professionals, and
+              landing your dream job.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link px-2 text-body-secondary"
+              >About</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 PICTGradNET</p>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
