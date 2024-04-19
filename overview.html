@@ -79,40 +79,6 @@
         chart.draw(view, options);
     }
     </script>
-    <script type="text/javascript">
-        google.charts.load("current", {packages:['corechart']});
-        google.charts.setOnLoadCallback(drawChart);
-        function drawChart() {
-          var data = google.visualization.arrayToDataTable([
-            ["Year", "Students Placed", { role: "style" } ],
-            ["2017-18", 228, "lightblue"],
-            ["2018-19", 355, "lightblue"],
-            ["2019-20", 484, "lightblue"],
-            ["2020-21", 504, "lightblue"],
-            ["2021-22", 642, "lightblue"],
-            ["2022-23", 686, "lightblue"],
-  
-          ]);
-    
-          var view = new google.visualization.DataView(data);
-          view.setColumns([0, 1,
-                           { calc: "stringify",
-                             sourceColumn: 1,
-                             type: "string",
-                             role: "annotation" },
-                           2]);
-    
-          var options = {
-            title: "PPOs Offered",
-            width: 700,
-            height: 500,
-            bar: {groupWidth: "95%"},
-            legend: { position: "none" },
-          };
-          var chart = new google.visualization.ColumnChart(document.getElementById("ppos"));
-          chart.draw(view, options);
-      }
-      </script>
     <style>
         .chart {
             margin-left:25%

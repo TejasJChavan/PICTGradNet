@@ -11,6 +11,90 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="sty.css" />
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "Students Placed", { role: "style" }],
+          ["2017-18", 0, "lightblue"],
+          ["2018-19", 8, "lightblue"],
+          ["2019-20", 8, "lightblue"],
+          ["2020-21", 8, "lightblue"],
+          ["2021-22", 12.73, "lightblue"],
+          ["2022-23", 12.6, "lightblue"],
+        ]);
+
+        var view = new google.visualization.DataView(data);
+        view.setColumns([
+          0,
+          1,
+          {
+            calc: "stringify",
+            sourceColumn: 1,
+            type: "string",
+            role: "annotation",
+          },
+          2,
+        ]);
+
+        var options = {
+          title: "Average Salary Offered",
+          width: 700,
+          height: 500,
+          bar: { groupWidth: "95%" },
+          legend: { position: "none" },
+        };
+        var chart = new google.visualization.ColumnChart(
+          document.getElementById("Salary")
+        );
+        chart.draw(view, options);
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "Students Placed", { role: "style" }],
+          ["2017-18", 0, "lightblue"],
+          ["2018-19", 28, "lightblue"],
+          ["2019-20", 15, "lightblue"],
+          ["2020-21", 33, "lightblue"],
+          ["2021-22", 32, "lightblue"],
+          ["2022-23", 22, "lightblue"],
+        ]);
+
+        var view = new google.visualization.DataView(data);
+        view.setColumns([
+          0,
+          1,
+          {
+            calc: "stringify",
+            sourceColumn: 1,
+            type: "string",
+            role: "annotation",
+          },
+          2,
+        ]);
+
+        var options = {
+          title: "Number of Students Recruited",
+          width: 700,
+          height: 500,
+          bar: { groupWidth: "95%" },
+          legend: { position: "none" },
+        };
+        var chart = new google.visualization.ColumnChart(
+          document.getElementById("Students_Recruited")
+        );
+        chart.draw(view, options);
+      }
+    </script>
   </head>
   <body>
     <div class="container my-5">
@@ -25,28 +109,37 @@
           our customers, clients and communities."
         </p>
         <div class="d-inline-flex gap-2 mb-5">
-            <a href="https://home.barclays/">
-          <button
-            class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill"
-            type="button"
-          >
-            Company Website
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-arrow-right-short"
-              viewBox="0 0 16 16"
+          <a href="https://home.barclays/">
+            <button
+              class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill"
+              type="button"
             >
-              <path
-                fill-rule="evenodd"
-                d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
-              />
-            </svg>
-          </button>
-        </a>
+              Company Website
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right-short"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"
+                />
+              </svg>
+            </button>
+          </a>
         </div>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center">
+      <div class="students-placed chart">
+        <div id="Salary"></div>
+      </div>
+
+      <div class="students-placed chart">
+        <div id="Students_Recruited"></div>
       </div>
     </div>
 
