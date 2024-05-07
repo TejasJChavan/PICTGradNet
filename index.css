@@ -247,7 +247,7 @@ img {
 .search input:focus, .search input:hover {
   border-color: var(--c-accent-primary);
 }
-.search button {
+.search button { 
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -270,7 +270,7 @@ img {
   overflow-x: auto;
 }
 @media (max-width: 1000px) {
-  .horizontal-tabs {
+  .horizontal-tabs { 
     scrollbar-width: none;
     position: relative;
   }
