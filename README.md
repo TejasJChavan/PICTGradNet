@@ -1,2 +1,2 @@
-# Current_Display_Website
- Website to show what I am currently learning
+# PICT GradNet
+College Placements Guide Platform, presented as a Project-Based Learning project in college.
